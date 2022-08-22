@@ -376,6 +376,12 @@ nav {
     color: #fab700;
 }
 
+
+/*banner ends here*/
+
+
+/*services start here*/
+
 .services {
     padding: 136px 0 175px 0;
     display: flex;
@@ -412,6 +418,12 @@ nav {
     font-size: 16px;
     text-align: center;
 }
+
+
+/*services end here*/
+
+
+/*quotes start here*/
 
 .request-quote .wrapper-large {
     display: flex;
@@ -457,7 +469,8 @@ nav {
     padding: 31px 0;
     margin: 0 auto;
     display: flex;
-    background: url('../images/form-bg.jpg') center no-repeat;
+    background: rgba(0, 0, 0, 0.5) url('../images/form-bg.jpg') center no-repeat;
+    background-blend-mode: multiply;
     flex-direction: column;
     align-items: center;
     flex: 1;
@@ -479,9 +492,43 @@ form[name=contact] {
     text-align: left;
 }
 
-input {
+input,
+select {
+    box-sizing: border-box;
     width: 100%;
     padding: 10px 2%;
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+option {
+    color: #000;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 2%;
+    min-height: 108px;
+    border: 1px solid #fff;
+    display: block;
+    background-color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #fff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: transparent;
+}
+
+input[type=submit] {
+    font-size: 12px;
 }
 
 .form div {
@@ -497,7 +544,40 @@ input {
 }
 
 
-/*banner ends here*/
+/*quotes ends here*/
+
+
+/*market start here*/
+
+.market-title {
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.market-sub-title {
+    color: #454545;
+    text-align: center;
+}
+
+.markets {
+    display: flex;
+}
+
+
+/*market end here*/
+
+
+/*data start here */
+
+.data {
+    background: url(../images/ramp.jpg);
+}
+
+
+/*data end here*/
 
 
 /*=================================
