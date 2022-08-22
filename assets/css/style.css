@@ -280,6 +280,10 @@ nav {
     color: #fab700;
 }
 
+.nav-item:nth-last-child(3) {
+    position: relative;
+}
+
 .nav-item:nth-last-child(3)>a::after {
     padding-left: 15%;
     color: #000;
@@ -294,7 +298,15 @@ nav {
 
 .blogs {
     display: none;
+    position: absolute;
     flex-direction: column;
+    z-index: 1;
+}
+
+.blog {
+    padding: 10px 0;
+    color: #000;
+    font-weight: 600;
 }
 
 .menu {
@@ -367,6 +379,7 @@ nav {
 .services {
     padding: 136px 0 175px 0;
     display: flex;
+    justify-content: space-between;
 }
 
 .service {
@@ -374,6 +387,10 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.service:last-child {
+    padding-right: 0;
 }
 
 .icon {
@@ -394,6 +411,89 @@ nav {
     color: #454545;
     font-size: 16px;
     text-align: center;
+}
+
+.request-quote .wrapper-large {
+    display: flex;
+}
+
+.description {
+    width: 70%;
+    padding-top: 30px;
+}
+
+.quote-sub-title {
+    color: #fab700;
+    font-size: 16px;
+}
+
+.quote-title {
+    width: 50%;
+    padding: 16px 0 34px 0;
+    color: #000;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.quote-line {
+    padding-bottom: 16px;
+    color: #000;
+}
+
+.quote-description {
+    width: 95%;
+    padding-bottom: 40px;
+    color: #454545;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.btn-start-now {
+    padding: 11px 4%;
+}
+
+.form {
+    flex-basis: 30%;
+    padding: 31px 0;
+    margin: 0 auto;
+    display: flex;
+    background: url('../images/form-bg.jpg') center no-repeat;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+form[name=contact] {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    width: 80%;
+    padding-bottom: 16px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px 2%;
+}
+
+.form div {
+    width: 100%;
+}
+
+.select-service,
+.name,
+.phone,
+.email,
+.textarea {
+    padding-bottom: 4px;
 }
 
 
