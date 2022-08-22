@@ -224,32 +224,55 @@ li {
 }
 
 
+/*common styling*/
+
+.btn {
+    padding: 11px 0;
+    border: 2px solid #fab700;
+    background-color: #fab700;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
 /*=================================
   Header styling starts here
 =================================*/
 
+header {
+    border-top: 2px solid #000;
+    margin-top: 5px;
+}
+
 header .wrapper-large {
-    padding: 20px 0;
+    padding: 18px 0;
     display: flex;
 }
 
+nav {
+    flex: 1 45%;
+}
+
 .logo {
-    width: 45%;
+    width: 55%;
 }
 
 .nav-items {
     width: 100%;
     display: flex;
+    justify-content: flex-end;
 }
 
 .nav-item {
-    padding-right: 7%;
+    padding: 10px 0;
+    padding-right: 5%;
 }
 
 .nav-item a {
     color: #454545;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -271,6 +294,15 @@ header .wrapper-large {
 
 .blogs {
     display: none;
+    flex-direction: column;
+}
+
+.menu {
+    display: none;
+}
+
+.nav-item:nth-last-child(3):hover .blogs {
+    display: flex;
 }
 
 
@@ -282,6 +314,90 @@ header .wrapper-large {
 /*=================================
   main styling starts here
 =================================*/
+
+
+/*banner start here */
+
+.banner {
+    padding: 101px 0 205px 0;
+    background: rgba(0, 0, 0, 0.5) url('../images/banner-bg.jpg') center no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.banner .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-sub-title {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner-title {
+    padding: 29px 0 35px 0;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.banner p {
+    padding-bottom: 18px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.btn-start {
+    padding: 11px 2.2%;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #fab700;
+}
+
+.services {
+    padding: 136px 0 175px 0;
+    display: flex;
+}
+
+.service {
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    padding: 36px;
+    border: 1px solid #656565;
+    display: inline-block;
+}
+
+.service-title {
+    padding: 40px 0 28px 0;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.service-description {
+    color: #454545;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/*banner ends here*/
 
 
 /*=================================
