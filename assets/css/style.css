@@ -236,6 +236,13 @@ li {
     text-transform: uppercase;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 /*=================================
   Header styling starts here
@@ -399,17 +406,57 @@ nav {
     padding-right: 0;
 }
 
-.icon {
-    padding: 36px;
-    border: 1px solid #656565;
-    display: inline-block;
+.services .icon {
+    box-sizing: border-box;
+    width: 62px;
+    height: 38px;
+    border-right: 1px solid #656565;
+    border-left: 1px solid #656565;
+    border-radius: 5px;
+    position: relative;
+    transition: all 1s;
+    text-indent: -9999px;
+}
+
+.icon::before,
+.icon::after {
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\e2ca";
+}
+
+.icon::before {
+    transform: rotate(60deg);
+}
+
+.icon::after {
+    transform: rotate(-60deg);
+}
+
+.icon span {
+    position: relative;
+    text-indent: 0;
+}
+
+.icon span::before {
+    width: 100%;
+    height: 100%;
+    font-size: 21px;
+    text-indent: 0;
+    content: '\e2ca';
+    float: right;
 }
 
 .service-title {
     padding: 40px 0 28px 0;
     color: #000;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
 }
 
@@ -417,6 +464,7 @@ nav {
     color: #454545;
     font-size: 16px;
     text-align: center;
+    line-height: 1.5;
 }
 
 
@@ -430,17 +478,17 @@ nav {
 }
 
 .description {
-    width: 70%;
+    width: 68%;
     padding-top: 30px;
 }
 
 .quote-sub-title {
-    color: #fab700;
+    color: #f9bb65;
     font-size: 16px;
 }
 
 .quote-title {
-    width: 50%;
+    width: 45%;
     padding: 16px 0 34px 0;
     color: #000;
     font-size: 34px;
@@ -461,11 +509,11 @@ nav {
 }
 
 .btn-start-now {
-    padding: 11px 4%;
+    padding: 11px 6%;
 }
 
 .form {
-    flex-basis: 30%;
+    flex-basis: 32%;
     padding: 31px 0;
     margin: 0 auto;
     display: flex;
@@ -549,6 +597,10 @@ input[type=submit] {
 
 /*market start here*/
 
+section.market {
+    padding: 242px 0 134px 0;
+}
+
 .market-title {
     padding-bottom: 10px;
     font-size: 40px;
@@ -558,12 +610,33 @@ input[type=submit] {
 }
 
 .market-sub-title {
+    padding-bottom: 50px;
     color: #454545;
     text-align: center;
 }
 
-.markets {
+.markets,
+.posts {
     display: flex;
+}
+
+li.market:nth-child(2),
+.post:nth-child(2) {
+    padding: 0 3%;
+}
+
+.market figcaption {
+    padding: 22px 0;
+    color: #000;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.market .description {
+    width: 100%;
+    padding-top: 0;
+    color: #454545;
+    font-size: 16px;
 }
 
 
@@ -573,7 +646,53 @@ input[type=submit] {
 /*data start here */
 
 .data {
-    background: url(../images/ramp.jpg);
+    padding: 118px 0 137px 0;
+    background: rgba(24, 24, 238, 0.5) url(../images/ramp.jpg) center no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+}
+
+.stat {
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat:last-child {
+    padding-right: 0;
+}
+
+.number {
+    width: 91px;
+    height: 91px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #fab700;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    padding: 25px;
+    border: 2px solid #fab700;
+    border-radius: 50%;
+    display: block;
+    content: "";
+}
+
+.stat-label {
+    padding-top: 25px;
+    color: #fff;
+    font-size: 21px;
 }
 
 
