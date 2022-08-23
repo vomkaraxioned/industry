@@ -785,11 +785,31 @@ li.market:nth-child(2),
 
 .fb-block {
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 .fb-block figure {
+    flex-basis: 55%;
     max-height: 306px;
+    position: relative;
+}
+
+.fb-block figure::before {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    color: #fff;
+    font-family: 'FontAwesome';
+    font-size: 40px;
+    font-weight: 900;
+    content: '\f144';
+    justify-content: center;
+    align-items: center;
+}
+
+.fb-block figure:hover::before {
+    color: #ffa500;
+    cursor: pointer;
 }
 
 .fb-block img {
@@ -798,11 +818,12 @@ li.market:nth-child(2),
 }
 
 .clients-fb {
-    padding: 78px 3% 72px 3%;
+    flex-basis: 45%;
+    padding: 78px 0 72px 2%;
 }
 
 .feedbacks {
-    padding-bottom: 39px;
+    padding-bottom: 30px;
     display: flex;
 }
 
@@ -878,19 +899,108 @@ li.market:nth-child(2),
 .control::before {
     color: #656565;
     font-family: 'FontAwesome';
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 900;
     content: '\f45c';
     text-indent: 0;
     float: right;
 }
 
-.active-control: {
+.active-control::before,
+.control:hover::before {
     color: #ffa500;
+    cursor: pointer;
 }
 
 
 /*feedback start here*/
+
+section:last-child {
+    padding: 125px 0 164px 0;
+}
+
+.post-title {
+    padding-bottom: 38px;
+}
+
+.post-sub-title {
+    width: 60%;
+    padding-bottom: 73px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.post>figure {
+    width: 100%;
+    min-height: 215px;
+    max-height: 215px;
+}
+
+.post img {
+    width: 100%;
+    height: 100%;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    padding: 10px 0;
+    border-bottom: 1px solid #cdcdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user figure {
+    width: 30px;
+    height: 30px;
+}
+
+.user-name,
+.date,
+.likes,
+.comments {
+    padding: 0 25% 0 2%;
+    color: #454545;
+    font-size: 12px;
+}
+
+.date,
+.likes,
+.comments {
+    padding-right: 3%;
+}
+
+.post .post-title {
+    padding: 35px 0 25px 0;
+    font-size: 21px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.post-description {
+    color: #454545;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.comments::before,
+.likes::before {
+    color: #656565;
+    font-family: 'FontAwesome';
+    font-weight: 900;
+}
+
+.comments::before {
+    content: '\f075';
+}
+
+.likes::before {
+    content: '\f004';
+}
 
 
 /*=================================
