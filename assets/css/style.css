@@ -601,18 +601,29 @@ section.market {
     padding: 242px 0 134px 0;
 }
 
-.market-title {
-    padding-bottom: 10px;
+.market-title,
+.gallery-title,
+.post-title {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
     text-transform: capitalize;
 }
 
+.market-title {
+    padding-bottom: 10px;
+}
+
+.market-sub-title,
+.gallery-sub-title,
+.post-sub-title {
+    color: #454545;
+    font-size: 16px;
+    text-align: center;
+}
+
 .market-sub-title {
     padding-bottom: 50px;
-    color: #454545;
-    text-align: center;
 }
 
 .markets,
@@ -658,7 +669,7 @@ li.market:nth-child(2),
 }
 
 .stat {
-    padding-right: 15%;
+    padding-right: 10.7%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -697,6 +708,189 @@ li.market:nth-child(2),
 
 
 /*data end here*/
+
+
+/*gallery start here*/
+
+.gallery {
+    padding: 125px 0 149px 0;
+}
+
+.gallery-title {
+    padding-bottom: 15px;
+}
+
+.gallery-sub-title {
+    padding-bottom: 49px;
+}
+
+.gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item:first-child {
+    flex-basis: 70%;
+    padding: 0 3% 30px 0;
+    max-height: 369px;
+}
+
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item:nth-child(2) {
+    flex: 1;
+    max-height: 369px;
+    padding-bottom: 30px;
+}
+
+.gallery-item:nth-child(3) {
+    flex-basis: 50%;
+    padding-right: 3%;
+}
+
+.gallery-item:last-child {
+    flex: 1;
+}
+
+
+/*gallery end here*/
+
+
+/*feedback start here*/
+
+.feedback {
+    padding: 125px 0 116px 0;
+    background: rgba(0, 0, 0, 0.5) url('../images/furnace.jpg') center no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.feedback-title {
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.feedback-sub-title {
+    padding-bottom: 50px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.fb-block {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.fb-block figure {
+    max-height: 306px;
+}
+
+.fb-block img {
+    width: 100%;
+    height: 100%;
+}
+
+.clients-fb {
+    padding: 78px 3% 72px 3%;
+}
+
+.feedbacks {
+    padding-bottom: 39px;
+    display: flex;
+}
+
+.fb {
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fb:last-child {
+    padding-right: 0;
+}
+
+.client-name {
+    flex-basis: 50%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.ratings {
+    flex: 1;
+}
+
+.fb-description {
+    flex-basis: 100%;
+    padding-top: 15px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.rating {
+    padding-right: 2%;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+.rating:last-child {
+    padding-right: 0;
+}
+
+.rating::before {
+    color: #656565;
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    font-weight: 900;
+    content: '\f005';
+    text-indent: 0;
+    float: right;
+}
+
+.rating:first-child::before,
+.rating:nth-child(2)::before,
+.rating:nth-child(3)::before {
+    color: #ffa500;
+}
+
+.controls {
+    display: flex;
+}
+
+.control {
+    padding-right: 3%;
+    display: block;
+    text-indent: -9999px;
+}
+
+.control:last-child {
+    padding-right: 0;
+}
+
+.control::before {
+    color: #656565;
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    font-weight: 900;
+    content: '\f45c';
+    text-indent: 0;
+    float: right;
+}
+
+.active-control: {
+    color: #ffa500;
+}
+
+
+/*feedback start here*/
 
 
 /*=================================
